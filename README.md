@@ -74,7 +74,7 @@ print(message.payback) # get message payback
 ```python
 bulk_id = "message-tracking-code"
 
-statuses, pagination_info := sms.fetch_statuses(bulk_id, 0, 10)
+statuses, pagination_info = sms.fetch_statuses(bulk_id, 0, 10)
 
 # you can loop in messages statuses list
 for status in statuses {
