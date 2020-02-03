@@ -5,7 +5,7 @@ with open("README.md", "r") as fh:
 
 setuptools.setup(
     name="medianasms",
-    version="1.0.1",
+    version="1.0.2",
     author="Asghar Dadashzadeh",
     author_email="a.dadashzadeh@mediana.ir",
     description="medianasms sdk",
