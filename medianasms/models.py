@@ -31,7 +31,7 @@ class PaginationInfo(Base):
         self.prev = None
         self.next = None
 
-        super().from_json(data)
+        super(PaginationInfo, self).from_json(data)
 
 
 class Response(Base):
@@ -45,7 +45,7 @@ class Response(Base):
         self.data = None
         self.meta = None
 
-        super().from_json(data)
+        super(Response, self).from_json(data)
 
         if "meta" in data:
             self.meta = PaginationInfo(data["meta"])
@@ -72,7 +72,7 @@ class Message(Base):
         self.payback_cost = None
         self.description = None
 
-        super().from_json(data)
+        super(Message, self).from_json(data)
 
 
 class Recipient(Base):
@@ -84,7 +84,7 @@ class Recipient(Base):
         self.recipient = None
         self.status = None
 
-        super().from_json(data)
+        super(Recipient, self).from_json(data)
 
 
 class InboxMessage(Base):
@@ -99,7 +99,7 @@ class InboxMessage(Base):
         self.time = None
         self.type = None
 
-        super().from_json(data)
+        super(InboxMessage, self).from_json(data)
 
 
 class Pattern(Base):
@@ -113,4 +113,4 @@ class Pattern(Base):
         self.message = None
         self.is_shared = None
 
-        super().from_json(data)
+        super(Pattern, self).from_json(data)

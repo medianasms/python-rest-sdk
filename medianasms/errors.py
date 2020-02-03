@@ -69,7 +69,7 @@ class Error(Exception):
         self.code = code
         self.message = message
 
-        super().__init__(str(message))
+        super(Error, self).__init__(str(message))
 
 
 class HTTPError(Exception):
