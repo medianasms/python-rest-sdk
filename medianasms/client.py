@@ -13,11 +13,11 @@ class Client:
     ''' medianasms client class
     '''
 
-    def __init__(self, apikey, base_url=None, timeout=None):
-        self.client = HTTPClient(
+    def __init__(self, apikey, http_client=None):
+        self.client = http_client or HTTPClient(
             apikey,
-            base_url or BASE_URL,
-            timeout or DEFAULT_TIMEOUT,
+            BASE_URL,
+            DEFAULT_TIMEOUT,
             CLIENT_VERSION,
         )
         self.apikey = apikey
