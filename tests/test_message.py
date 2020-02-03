@@ -78,7 +78,7 @@ class TestMessage(unittest.TestCase):
                 "page": 1,
                 "cost": 0,
                 "payback_cost": 0,
-                "description": "ارسال تکی به1شماره"
+                "description": ""
                 }
             }
         }
