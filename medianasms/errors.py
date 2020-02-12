@@ -7,21 +7,21 @@ class ResponseCode(enum.Enum):
     # ErrMessageBodyIsEmpty message body is empty
     ErrMessageBodyIsEmpty = "10002"
     # ErrUserLimitted user is limited
-    ErrUserLimitted = "10003"
-    # ErrLineNotAssignedToYou line not assigned to you
-    ErrLineNotAssignedToYou = "10004"
+    ErrUserLimited = "10003"
+    # ErrNumberNotAssignedToYou line not assigned to you
+    ErrNumberNotAssignedToYou = "10004"
     # ErrRecipientsEmpty recipients is empty
     ErrRecipientsEmpty = "10005"
     # ErrCreditNotEnough credit not enough
     ErrCreditNotEnough = "10006"
-    # ErrLineNotProfitForBulkSend line not profit for bulk send
-    ErrLineNotProfitForBulkSend = "10007"
-    # ErrLineDeactiveTemp line deactivated temporally
-    ErrLineDeactiveTemp = "10008"
+    # ErrNumberNotProfitForBulkSend line not profit for bulk send
+    ErrNumberNotProfitForBulkSend = "10007"
+    # ErrNumberDeactiveTemp line deactivated temporally
+    ErrNumberDeactiveTemp = "10008"
     # ErrMaximumRecipientExceeded maximum recipients number exceeded
     ErrMaximumRecipientExceeded = "10009"
-    # ErrOperatorOffline operator is offline
-    ErrOperatorOffline = "10010"
+    # ErrGatewayOffline operator is offline
+    ErrGatewayOffline = "10010"
     # ErrNoPricing pricing not defined for user
     ErrNoPricing = "10011"
     # ErrTicketIsInvalid ticket is invalid
@@ -36,20 +36,16 @@ class ResponseCode(enum.Enum):
     ErrPatternIsInactive = "10016"
     # ErrPatternRecipientInvalid pattern recipient invalid
     ErrPatternRecipientInvalid = "10017"
-    # ErrPatternUnAuthorizedSend unauthorized send with pattern
-    ErrPatternUnAuthorizedSend = "10018"
     # ErrItsTimeToSleep send time is 8-23
     ErrItsTimeToSleep = "10019"
-    # ErrCreditCardNotProvided credit card not provided
-    ErrCreditCardNotProvided = "10020"
     # ErrDocumentsNotApproved one/all of users documents not approved
     ErrDocumentsNotApproved = "10021"
     # ErrInternal internal error
     ErrInternal = "10022"
-    # ErrEntityNotFound internal error
-    ErrEntityNotFound = "10023"
-    # ErrForbidden internal error
-    ErrForbidden = "10024"
+    # ErrNumberNotFound provided number not found
+    ErrNumberNotFound = "10023"
+    # ErrGatewayDisabled gateway disabled
+    ErrGatewayDisabled = "10024"
     # ErrUnprocessableEntity inputs have some problems
     ErrUnprocessableEntity = "422"
     # ErrUnauthorized unauthorized
